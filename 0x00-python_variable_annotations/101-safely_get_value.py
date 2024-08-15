@@ -3,10 +3,13 @@
 from typing import Union, Any, Mapping, TypeVar
 
 
+T = TypeVar('T')
+
+
 def safely_get_value(dct: Mapping,
                      key: Any,
-                     default: Union[TypeVar, None] = None
-                     ) -> Union[Any, TypeVar]:
+                     default: Union[T, None] = None
+                     ) -> Union[Any, T]:
     """ Returns a value"""
     if key in dct:
         return dct[key]
