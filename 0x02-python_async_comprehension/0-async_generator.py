@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 """ Contains the async_generator coroutine """
 import asyncio
 import random
