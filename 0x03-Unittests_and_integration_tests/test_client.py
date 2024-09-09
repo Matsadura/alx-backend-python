@@ -59,6 +59,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        """ setUpClass """
         config = {'return_value.json.side_effect': [
                     cls.org_payload, cls.repos_payload,
                     cls.org_payload, cls.repos_payload
